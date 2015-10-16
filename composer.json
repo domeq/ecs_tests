@@ -1,0 +1,15 @@
+{
+    "name": "10percent/ecs_tests",
+    "description": "Multi-container dockerized app test",
+    "require": {
+        "predis/predis": "^1.0",
+        "aws/aws-sdk-php": "*",
+        "silex/silex": "*"
+    },
+    "authors": [
+        {
+            "name": "Wojciech Iskra",
+            "email": "wojciech.iskra@schibsted.pl"
+        }
+    ]
+}

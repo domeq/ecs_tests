@@ -1,0 +1,10 @@
+web:
+  build: .
+  ports:
+   - "80:80"
+  volumes:
+   - .:/app
+  links:
+   - redis
+redis:
+  image: redis
