@@ -2,9 +2,9 @@
     "name": "10percent/ecs_tests",
     "description": "Multi-container dockerized app test",
     "require": {
-        "predis/predis": "^1.0",
         "aws/aws-sdk-php": "*",
-        "silex/silex": "*"
+        "silex/silex": "*",
+        "doctrine/couchdb": "@dev"
     },
     "authors": [
         {

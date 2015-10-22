@@ -2,9 +2,13 @@ web:
   build: .
   ports:
    - "80:80"
+  cpu_shares: 100
+  mem_limit: 268435456
   volumes:
    - .:/app
   links:
-   - redis
-redis:
-  image: redis
+   - couchdb
+couchdb:
+  image: klaemo/couchdb:latest
+  ports:
+     - "5984:5984"

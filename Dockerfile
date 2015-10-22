@@ -1,6 +1,6 @@
 FROM tutum/apache-php
-RUN apt-get update && apt-get install -yq git && rm -rf /var/lib/apt/lists/*
 RUN rm -fr /app
-ADD . /app
+COPY . /app
 WORKDIR /app
-RUN composer install
+RUN curl -sS https://getcomposer.org/installer | php
+RUN php composer.phar install
